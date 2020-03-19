@@ -1,0 +1,22 @@
+.slicky {
+    background-color: #f8f9fa;
+    background: linear-gradient(90deg, rgb(202, 202, 202) 5%, rgba(240, 239, 239, 0.897) 100%);
+}
+.slicky .container {
+    justify-content: center;
+    
+}
+.slicky .container .slider {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    padding: 40px ;
+
+}
+.slicky .container i {
+    font-size: 40px;
+    color: #36aeea;
+    opacity: .7;
+
+}

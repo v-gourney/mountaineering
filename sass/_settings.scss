@@ -1,0 +1,58 @@
+body {
+    background-color: rgba(187, 193, 195, .149);
+    font-family: "Opensans", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #949494;
+    overflow-x: hidden;
+    position: relative;
+    
+  }
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    
+  }
+  img .divider {
+    width: 81px;
+    height: 7px;
+    
+  }
+  h2 {
+    font-family: "Opensans", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #2c2e37;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-family: "Opensans", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #2c2e37;
+    text-transform: uppercase;
+  }
+  h4 {
+    margin: 0 auto;
+    font-family: "Opensans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 2.4px;
+    text-align: center;
+    color: #212121;
+  }
+  h5 {
+    font-family: "Opensans", sans-serif;
+    font-size: 28px;
+    line-height: 2.25;
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    text-align: left;
+    color: #fff;
+  }

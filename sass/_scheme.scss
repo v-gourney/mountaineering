@@ -1,0 +1,161 @@
+.scheme {
+    background: linear-gradient(180deg, rgb(187, 193, 195, .149) 30%, rgb(255, 255, 255) 100%);
+}
+.scheme .container {
+    flex-direction: column;
+    align-items: center;
+}
+.scheme .container .divider {
+    padding-top: 5%;
+    margin-bottom: 4%;
+}
+.scheme .container h2 {
+    margin: 0 0 7% 0;
+}
+.scheme .work-scheme {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.work-scheme .work-step {
+    max-width: 23%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 5% 0;
+}
+.work-step figcaption {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 25%;
+    position: relative;
+    text-align: center;
+    line-height: 48px;
+    white-space: nowrap;
+    border: solid 3px #36aeea;
+    border-radius: 50%;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 900;
+    color: #36aeea;
+}
+.work-scheme .work-step figcaption::before {
+    content: " ";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    height: 100%;
+    border-left: dashed 3px rgba(0, 0, 0, .63);
+}
+.work-scheme figcaption::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 120%;
+    width: 450%;
+    border-top: dashed 3px rgba(0, 0, 0, .63);
+}
+.work-scheme .last-step::after {
+    display: none;
+}
+.work-step div {
+    width: 180px;
+    height: 180px;
+    margin: 0 0 10% 0;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    background-color: rgba(147, 149, 149, .3);
+    border-radius: 50%;
+}
+.work-scheme .work-step .contract-step-1 {
+    animation-name: steper-animation-1;
+    animation-duration: 8s;
+    animation-iteration-count: 100; 
+    animation-play-state: running;
+}
+.work-scheme .work-step .contract-step-2 {
+    animation-name: steper-animation-2;
+    animation-duration: 8s;
+    animation-iteration-count: 100; 
+    animation-play-state: running;
+}
+.work-scheme .work-step .contract-step-3 {
+    animation-name: steper-animation-3;
+    animation-duration: 8s;
+    animation-iteration-count: 100; 
+    animation-play-state: running;
+}
+.work-scheme .work-step .contract-step-4 {
+    animation-name: steper-animation-4;
+    animation-duration: 8s;
+    animation-iteration-count: 100; 
+    animation-play-state: running;
+}
+.work-step div svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.work-step div i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 40px;
+    line-height: 50px;
+    color: rgba(0, 0, 0, .6);
+}
+.work-step p {
+    margin: 0 auto;
+    max-width: 75%;
+    text-align: center;
+    font-family: "Roboto";
+    text-transform: none;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #6d6d6d;
+}
+.work-step p::first-line {
+    font-size: 18px;
+    font-weight: 700;
+    color:rgba(0, 0, 0,.7)
+}
+@keyframes steper-animation-1 {
+    15% {
+        background-color: rgba(147, 149, 149,.3);
+    }
+    100% {
+        background-color: rgba(255, 0, 0,.5);
+    }
+}
+@keyframes steper-animation-2 {
+    30% {
+        background-color: rgba(147, 149, 149,.3);
+    }
+    100% {
+        background-color: rgba(255, 100, 0,.5);
+    }
+}
+@keyframes steper-animation-3 {
+    45% {
+        background-color: rgba(147, 149, 149,.3);
+    }
+    100% {
+        background-color: rgba(255, 217, 0,.5);
+    }
+}
+@keyframes steper-animation-4 {
+    60% {
+        background-color: rgba(147, 149, 149,.3);
+    }
+    100% {
+        background-color: rgba(81, 255, 0,.5);
+    }
+}

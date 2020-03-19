@@ -1,0 +1,53 @@
+.offer {
+    background-image: url(../media/bckgrds/bckg_offer.jpg);
+}
+.offer .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.offer .container .divider {
+    padding-top: 6%;
+    margin-bottom: 3%;
+}
+.offer .container h3 {
+    margin: 0 0 3% 0;
+}
+.offer .container p {
+    margin: 0 0 3% 0;
+    max-width: 60%;
+    text-transform: none;
+}
+.offer .customer-data {
+    margin: 0 0 2% 0;
+    width: 60%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.offer .customer-data input[type="text"], input[type="tel"] {
+    max-width: 300px;
+    width: 35%;
+    height: 40px;
+    margin: 0;
+    padding: 5px;
+    border: none;
+    box-sizing: border-box;
+}
+.offer .customer-data input:first-child {
+    border-radius: 4px 0 0 4px;
+    border-right: 2px solid #ebebeb;
+}
+.offer .customer-data input[type="submit"] {
+    width: 28.3%;
+    height: 40px;
+    cursor: pointer;
+    color: #fff;
+}
+.offer .container .data-protection {
+    text-transform: none;
+    font-size: 14px;
+    line-height: 2.43;
+    letter-spacing: 0.28px;
+    text-align: justify;
+    color: #36aeea;
+    margin-bottom: 20%;
+}

@@ -1,0 +1,58 @@
+
+.ourclients .container {
+    flex-direction: column;
+    align-items: center;
+}
+.ourclients .container .divider {
+    padding-top: 7%;
+    margin-bottom: 3%;   
+}
+.ourclients .container h2 {
+    margin: 0 0 5% 0;
+}
+.ourclients .container .clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ourclients .clients .customer {
+    flex-basis: 48%;
+    height: 60%;
+    margin-bottom: 3%;
+    position: relative;
+}
+.customer blockquote {
+    padding: 0;
+    margin: 0 auto 1%;
+    font-family: "Opensans", sans-serif;
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1.83;
+    letter-spacing: normal;
+    text-align: justify;
+    text-indent: 1em;
+    color: #646464;
+}
+.customer blockquote::before {
+    content: url(../media/cite_opener.png);
+    position: absolute;
+    top: -1.5em;
+    left: 0;
+}
+.customer img[alt="client photo"] {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-right: 1.5em;
+    vertical-align: middle;
+}
+.customer span {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: none;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #143e53;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.68);;
+}
