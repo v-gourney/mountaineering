@@ -340,19 +340,19 @@ template {
 
 @font-face {
   font-family: "Bringin", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  src: url(template/fonts/Bringin.ttf);
+  src: url(../fonts/Bringin.ttf);
 }
 @font-face {
   font-family: "Opensans", sans-serif;
-  src: url(template/fonts/OpenSans-Regular.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: "Raleway", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", serif;
-  src: url(template/fonts/Raleway.ttf);
+  src: url(../fonts/Raleway.ttf);
 }
 @font-face {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  src: url(template/fonts/Roboto.ttf);
+  src: url(../fonts/Roboto.ttf);
 }
 body {
   background-color: rgba(187, 193, 195, 0.149);
