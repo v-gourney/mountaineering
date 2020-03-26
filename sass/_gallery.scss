@@ -51,8 +51,9 @@
 .gallery .btn {
     display: block;
     margin: 0 auto 3%;
-    width: 7%;
+    width: max-content;
     height: 4%;
     padding: 10px;
     color: #fff;
+    white-space: nowrap;
 }

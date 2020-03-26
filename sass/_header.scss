@@ -27,16 +27,15 @@
     width: 100vw;
     z-index: 25;
     transition-duration: .4s;
-    box-shadow: inset 0px 15px 25px 10px rgba(80, 133, 248, 0.7);
+    box-shadow: inset 0px 15px 25px 10px rgba(80, 133, 248, .2);
 }
 a {
     width: 117px;
     height: 27px;
-    padding-left: 20px;
     margin-right: 50px;
     font-family: "Bringin";
     font-size: 29px;
-    line-height: 1.52;
+    // line-height: 1.52;
     letter-spacing: normal;
     color: #95a5ad;
     text-transform: capitalize;
@@ -58,7 +57,7 @@ a {
     font-family: "Raleway";
     padding-left: 0;
     padding-top: 15px;
-    padding-bottom: 31px;
+    padding-bottom: 34px;
     margin-right: 24px;
     font-size: 12px;
     font-weight: bold;
@@ -73,20 +72,16 @@ a {
 .main-navigation li a:hover {
     border-bottom: solid 6px #36aeea ;
     cursor: pointer;
-    font-size: 13px;
     color: #36aeea;
     transition-duration: .4s;
 }
 .main-navigation li a:active {
     border-bottom: solid 6px #fab521 ;
-    font-size: 13px;
-    color: #fab521;
+    color: #7e5c13;
 }
 .main-navigation li a:focus {
     border-bottom: solid 6px #fab521 ;
-    font-size: 13px;
     color: #fab521;
-    text-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
 }
 .logo-navigation a.btn  {
     display: block;
@@ -98,7 +93,6 @@ a {
     color: #36aeea;
     padding-left: 0;
     line-height: 46px;
-    
 }
 .to-mountains {
     padding-top: 8%;

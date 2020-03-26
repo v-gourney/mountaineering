@@ -14,7 +14,6 @@
     grid-template-columns: repeat(3, 380px);
     grid-template-rows: repeat(2, 380px);
     margin-bottom: 90px;
-    box-shadow:         inset 0px 0px 29px 4px rgba(50, 50, 50, 0.35);
 }
 .journal-item1 {
     grid-row: 1;
@@ -40,7 +39,7 @@
     position: absolute;
     top: 0;
     left: -6.5%;
-    color: #fff;
+    color: rgb(245, 245, 245);
 }
 .journal-item3 {
     grid-row: 2;
@@ -66,7 +65,7 @@
     position: absolute;
     top: 0;
     right: -6.5%;
-    color: #fff;
+    color:  rgb(245, 245, 245);
 }
 .journal-item5 {
     grid-row: 2;
@@ -79,7 +78,7 @@
     position: absolute;
     top: -7%;
     right: 0;
-    color: #fff;
+    color:  rgb(245, 245, 245);
     z-index: 1;
 }
 .journal-item6 {

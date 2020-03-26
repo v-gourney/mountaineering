@@ -340,19 +340,19 @@ template {
 
 @font-face {
   font-family: "Bringin", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  src: url(../fonts/Bringin.ttf);
+  src: url(template/fonts/Bringin.ttf);
 }
 @font-face {
   font-family: "Opensans", sans-serif;
-  src: url(../fonts/OpenSans-Regular.ttf);
+  src: url(template/fonts/OpenSans-Regular.ttf);
 }
 @font-face {
   font-family: "Raleway", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", serif;
-  src: url(../fonts/Raleway.ttf);
+  src: url(template/fonts/Raleway.ttf);
 }
 @font-face {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  src: url(../fonts/Roboto.ttf);
+  src: url(template/fonts/Roboto.ttf);
 }
 body {
   background-color: rgba(187, 193, 195, 0.149);
@@ -431,9 +431,8 @@ button, a.btn, input[type=submit] {
   box-shadow: 0px 0px 5px 2px rgba(50, 50, 50, 0.2);
 }
 
-button:hover, a.btn:hover {
-  transform: scale(1.1);
-  transition-duration: 0.5s;
+button:hover, a.btn:hover, input[type=submit]:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.71);
 }
 
 .header-wrapper {
@@ -467,17 +466,15 @@ button:hover, a.btn:hover {
   width: 100vw;
   z-index: 25;
   transition-duration: 0.4s;
-  box-shadow: inset 0px 15px 25px 10px rgba(80, 133, 248, 0.7);
+  box-shadow: inset 0px 15px 25px 10px rgba(80, 133, 248, 0.2);
 }
 
 a {
   width: 117px;
   height: 27px;
-  padding-left: 20px;
   margin-right: 50px;
   font-family: "Bringin";
   font-size: 29px;
-  line-height: 1.52;
   letter-spacing: normal;
   color: #95a5ad;
   text-transform: capitalize;
@@ -500,7 +497,7 @@ a {
   font-family: "Raleway";
   padding-left: 0;
   padding-top: 15px;
-  padding-bottom: 31px;
+  padding-bottom: 34px;
   margin-right: 24px;
   font-size: 12px;
   font-weight: bold;
@@ -515,22 +512,18 @@ a {
 .main-navigation li a:hover {
   border-bottom: solid 6px #36aeea;
   cursor: pointer;
-  font-size: 13px;
   color: #36aeea;
   transition-duration: 0.4s;
 }
 
 .main-navigation li a:active {
   border-bottom: solid 6px #fab521;
-  font-size: 13px;
-  color: #fab521;
+  color: #7e5c13;
 }
 
 .main-navigation li a:focus {
   border-bottom: solid 6px #fab521;
-  font-size: 13px;
   color: #fab521;
-  text-shadow: 0px -2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .logo-navigation a.btn {
@@ -615,7 +608,7 @@ a {
 .container .readmore {
   flex-basis: 40%;
   padding-top: 17%;
-  padding-bottom: 17%;
+  margin-bottom: 12%;
 }
 
 .readmore .divider {
@@ -651,21 +644,28 @@ a {
   color: #ffffff;
 }
 
+::-webkit-input-placeholder {
+  color: #0b2258;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
 .popup {
   position: fixed;
-  top: 92px;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.65);
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 23%, rgba(219, 219, 219, 0.6) 100%);
   border-radius: 4px;
-  z-index: 15;
+  z-index: 30;
 }
 
 .popup .popup-content {
   position: relative;
-  margin: 40px auto 40px 18vw;
+  margin: 120px auto 40px 18vw;
   width: 500px;
   height: max-content;
   padding: 20px;
@@ -686,7 +686,7 @@ a {
   display: block;
   position: absolute;
   top: -10px;
-  left: 515px;
+  left: 530px;
   font-size: 40px;
   font-weight: bold;
   text-align: left;
@@ -716,11 +716,12 @@ a {
 }
 
 .container .fewpics img:last-child {
-  position: absolute;
+  position: relative;
   top: -36px;
-  left: 89px;
-  width: 806px;
-  height: 570px;
+  left: 65px;
+  max-width: 600px;
+  max-height: auto;
+  overflow: hidden;
   z-index: 5;
   transition-duration: 0.4s;
 }
@@ -753,7 +754,6 @@ a {
   grid-template-columns: repeat(3, 380px);
   grid-template-rows: repeat(2, 380px);
   margin-bottom: 90px;
-  box-shadow: inset 0px 0px 29px 4px rgba(50, 50, 50, 0.35);
 }
 
 .journal-item1 {
@@ -783,7 +783,7 @@ a {
   position: absolute;
   top: 0;
   left: -6.5%;
-  color: #fff;
+  color: whitesmoke;
 }
 
 .journal-item3 {
@@ -813,7 +813,7 @@ a {
   position: absolute;
   top: 0;
   right: -6.5%;
-  color: #fff;
+  color: whitesmoke;
 }
 
 .journal-item5 {
@@ -828,7 +828,7 @@ a {
   position: absolute;
   top: -7%;
   right: 0;
-  color: #fff;
+  color: whitesmoke;
   z-index: 1;
 }
 
@@ -942,7 +942,7 @@ a {
   width: 35%;
   height: 40px;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   border: none;
   box-sizing: border-box;
 }
@@ -1185,6 +1185,28 @@ a {
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
+  position: relative;
+}
+
+.destination-cards .destination:hover::after {
+  content: "ORDER THIS DESTINATION";
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  font-size: 1.5em;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", sans-serif;
+  padding-top: 20%;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(2, 58, 80, 0.85) 0%, rgba(255, 255, 255, 0.3) 100%);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.71);
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .destination-cards .destination:first-child {
@@ -1329,15 +1351,16 @@ a {
 .gallery .btn {
   display: block;
   margin: 0 auto 3%;
-  width: 7%;
+  width: max-content;
   height: 4%;
   padding: 10px;
   color: #fff;
+  white-space: nowrap;
 }
 
 .slicky {
   background-color: #f8f9fa;
-  background: linear-gradient(90deg, #cacaca 5%, rgba(240, 239, 239, 0.897) 100%);
+  background: linear-gradient(90deg, rgba(202, 202, 202, 0.4) 5%, rgba(240, 239, 239, 0.4) 100%);
 }
 
 .slicky .container {
@@ -1345,8 +1368,6 @@ a {
 }
 
 .slicky .container .slider {
-  display: flex;
-  justify-content: center;
   width: 100%;
   padding: 40px;
 }
@@ -1355,6 +1376,8 @@ a {
   font-size: 40px;
   color: #36aeea;
   opacity: 0.7;
+  text-align: center;
+  outline: none;
 }
 
 .ourclients .container {
@@ -1471,7 +1494,7 @@ a {
   width: 90%;
   height: 40px;
   margin: 0 auto 1.2em;
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 4px;
   box-sizing: unset;
@@ -1516,7 +1539,7 @@ a {
   min-height: 40px;
   margin: 0 auto;
   padding: 0 10px;
-  transition-duration: 0.6s;
+  transition-duration: 0.2s;
 }
 
 .endline .social-icons a:nth-child(-n+2) {
@@ -1536,7 +1559,7 @@ a {
 }
 
 .social-icons a:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 1;
   color: #fff;
 }
@@ -1545,7 +1568,7 @@ a {
   font-size: 20px;
 }
 
-.footer .endline .our-phone {
+.footer .endline .our-phone a {
   font-family: "Roboto";
   font-size: 27px;
   font-weight: 900;

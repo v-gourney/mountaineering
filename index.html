@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
-    <!-- onload='document.form2.userEmail()' -->
+    
 <section class="header-wrapper" id="home">
     <header class="logo-navigation">
         <div class="container">
@@ -30,7 +30,7 @@
                     <li><a href="#contacts" title="Contact us">Contacts</a></li>
                 </ul>
             </nav>
-            <a class="btn" href="tel:+375295839992"> Call us</a>
+            <a class="btn" href="tel:+998781503022"> Call us</a>
         </div>
     </header>
     <section class="to-mountains">
@@ -58,10 +58,10 @@
                     As the originators, innovators and leaders in adventure travel for more than five decades, we passionately create, craft and share indelible, transformative journeys to the world's most memorable places. Our more than 200 unique and once-in-a-lifetime trips are designed to inspire and exhilarate, enliven and excite—opening eyes and minds through profoundly personal connections with nature and culture. <br>
 
                     Our small group and custom adventures span the globe and the spectrum—of interests, environments, and activities—every one expertly planned and knowledgeably and passionately guided. And our commitment to making every experience a remarkable one has earned us preferred travel outfitter status for National Geographic Active Expeditions, Active New York Times Journeys, and Smithsonian Active Journeys. <br>
-                    <a href="javascript:PopUpHide()">&#215</a>
+                    <a href="javascript:PopUpHide()" onclick="document.body.style.overflow = ''">&#215</a>
                 </div>
             </div>
-            <a class="btn" href="javascript:PopUpShow()">read more</a>
+            <a class="btn" href="javascript:PopUpShow()" onclick="document.body.style.overflow = 'hidden'">read more</a>
         </div>
         <div class="fewpics">
             <img src="./media/blog_about_2.jpg" alt="mountain paysage">
@@ -76,7 +76,6 @@
             our journal
         </h2>
         <div class="journal-pages">
-            
             <div class="journal-item1">
                     <img src="./media/journal_1.jpg" alt="misty forest">
             </div>
@@ -117,9 +116,9 @@
         <p>
             Contact your local travel manager on opportunities to make a journey to the mountains or local spots. Call today to be connected to your local manager. 
         </p> 
-        <form action="" method="POST" target="_blank"  class="customer-data">
-            <input name="username" type="text" id="username"  placeholder="Your name: *" required maxlength="150">
-            <input name="userphone" type="tel" id="user-phone" placeholder="Your phone: *" required>
+        <form action="https://formspree.io/xjvolzog" method="POST" target="_self"  class="customer-data">
+            <input name="username" type="text" id="username"  placeholder="Your name: *" required maxlength="150" autocomplete="off">
+            <input name="userphone" type="tel" id="user-phone" placeholder="Your phone: *" required autocomplete="off">
             <input type="submit" value="ORDER NOW">
         </form>
         <span class="data-protection">
@@ -201,7 +200,7 @@
         <img class="divider" src="./media/divider.png" alt="decorative image">
         <h2>travel with us</h2>
         <div class="destination-cards">
-            <div class="destination">
+            <div class="destination" title="Carpathian" onclick="window.location.href='#ordernow'">
                 <div class="star-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -216,7 +215,7 @@
                     <div class="reduced-price">$790</div>
                 </div>
             </div>
-            <div class="destination">
+            <div class="destination" title="Alps" onclick="window.location.href='#ordernow'" >
                 <div class="star-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -231,7 +230,7 @@
                     <div class="reduced-price">$1893</div>
                 </div>
             </div>
-            <div class="destination">
+            <div class="destination" title="Pyrenees" onclick="window.location.href='#ordernow'">
                 <div class="star-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -246,7 +245,7 @@
                     <div class="reduced-price">$2593</div>
                 </div>
             </div>
-            <div class="destination">
+            <div class="destination" title="Andes" onclick="window.location.href='#ordernow'">
                 <div class="star-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -261,7 +260,7 @@
                     <div class="reduced-price">$2773</div>
                 </div>
             </div>
-            <div class="destination">
+            <div class="destination" title="Caucasus" onclick="window.location.href='#ordernow'">
                 <div class="star-rating">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -336,14 +335,14 @@
     </section>
     <section class="footer" id="contacts">
         <div class="container">
-            <form action="" name="form2" method="POST" target="_blank">
+            <form action="https://formspree.io/xjvolzog" name="form2" method="POST" onsubmit="javascript:return ValidateEmail(document.form2.userEmail)"  target="_self">
                 <h2>contacts</h2>
                 <p>Sign up for our newsletter to receive updates</p>
-                <input type="text" name="username-contacts" id="username-contacts"  placeholder="Name: *" required maxlength="150">
-                <input type="tel" name="userphone-contacts" id="userphone-contacts" placeholder="Phone:">
-                <input type="text" name="userEmail" id="user-email" placeholder="Email: *" required maxlength="100">
-                <input type="submit" name="submit" value="SEND" >
-                <!-- onclick="ValidateEmail(document.form2.userEmail)" -->
+                <input type="text" name="username-contacts" id="username-contacts"  placeholder="Name: *" required maxlength="150" autocomplete="off">
+                <input type="tel" name="userphone-contacts" id="userphone-contacts" placeholder="Phone:" autocomplete="off">
+                <input type="text" name="userEmail" id="user-email" placeholder="Email: *" required maxlength="100" autocomplete="off">
+                <input type="submit" name="submit" value="SEND" onclick="ValidateEmail(document.form2.userEmail)" >
+                 
             </form>
             <div class="endline">
                 <div class="copyright">
@@ -360,13 +359,12 @@
                     </a>
                 </div>
                 <div class="our-phone">
-                    +998 78 1503022
+                    <a href="tel:+998781503022"> +9 987 815 03 022</a>
                 </div>
             </div>
         </div>
     </section>   
 </section>
-<p>end</p>
 <script src="./js/jquery-3.4.1.min.js"></script> 
 <script src="./js/slick.min.js"></script>
 <script src="./js/main.js"></script>

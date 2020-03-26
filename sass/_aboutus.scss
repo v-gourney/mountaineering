@@ -6,7 +6,7 @@
 .container .readmore {
     flex-basis: 40%;
     padding-top: 17%;
-    padding-bottom: 17%;
+    margin-bottom: 12%;
 }
 .readmore .divider {
     margin-bottom: 43px;
@@ -37,20 +37,26 @@
     text-align: center;
     color: #ffffff;
 }
+::-webkit-input-placeholder{
+    color:#0b2258;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    opacity: .5;
+    font-weight: 600;
+} 
 .popup {
     position:fixed;
-    top: 92px;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.65);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 23%, rgba(219, 219, 219, 0.6) 100%);
-    border-radius:  4px;
-    z-index: 15;
+    background-color: rgba(0, 0, 0, .65);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 23%, rgba(219, 219, 219, .6) 100%);
+    border-radius: 4px;
+    z-index: 30;
 }
 .popup .popup-content {
     position: relative;
-    margin: 40px auto 40px 18vw;
+    margin: 120px auto 40px 18vw;
     width: 500px;
     height: max-content;
     padding: 20px;
@@ -70,13 +76,12 @@
     display: block;
     position: absolute;
     top: -10px;
-    left: 515px;
+    left: 530px;
     font-size: 40px;
     font-weight: bold;
     text-align: left;
     color: #ffffff;
 }
-
 .container .fewpics {
     position: relative;
 }
@@ -97,11 +102,12 @@
     border-radius: 5px;
 }
 .container .fewpics img:last-child {
-    position: absolute;
+    position: relative;
     top: -36px;
-    left: 89px;
-    width: 806px;
-    height: 570px;
+    left: 65px;
+    max-width: 600px;
+    max-height: auto;
+    overflow: hidden;
     z-index: 5;
     transition-duration: .4s;
 }
