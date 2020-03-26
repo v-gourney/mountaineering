@@ -1,0 +1,28 @@
+body {
+    background-color: rgba(54, 174, 234, 0.294);
+}
+nav {
+    background: linear-gradient(180deg, rgba(54, 174, 234, .3) 9%, rgb(235, 234, 234) 100%);
+}
+.card {
+    background-color: rgba(54, 174, 234, 0.294);
+}
+.carousel-item img {
+    height: 35vw;
+} 
+.carousel-item h5 {
+    display: inline-block;
+    font-weight: 800;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+.carousel-item p {
+    font-style: italic;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0 auto;
+    padding: .4em;
+    border-radius: 0 .8em 0 .8em;
+    color: rgb(18, 4, 59);
+    background-color: rgba(255, 255, 255, .5);
+}

@@ -9,7 +9,6 @@ $(window).scroll(function() {
 
 
 const anchors = document.querySelectorAll('a[href*="#"]')
-
     for (let anchor of anchors) {
       anchor.addEventListener('click', function (e) {
         e.preventDefault()
@@ -40,7 +39,7 @@ $('.slider').slick({
   autoplaySpeed: 2000,
   arrows: false,
 });
-/*
+
 function ValidateEmail(inputText)
 {
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -55,4 +54,4 @@ alert("You have entered an invalid email address!");
 document.form2.userEmail();
 return false;
 }
-}*/
+}
