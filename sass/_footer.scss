@@ -14,14 +14,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 7%;
-    margin-bottom: 12%;
+    margin-bottom: 7%;
     padding: 40px 30px;
     background-color: rgba(79, 99, 105, .7);
     border-radius: 10px;
     position: relative;
 }
-
 .footer form h2 {
     margin: 0 auto 5px;
     font-size: 36px;
@@ -37,7 +35,6 @@
     text-transform: none;
     color: #383e4a;
 } 
-
 .footer form input[type] {
     max-width: 90%;
     width: 90%;
@@ -49,7 +46,6 @@
     box-sizing: unset;
     position: relative;
 }
-
 .footer form input[type="submit"] {
     font-weight: bold;
     line-height: normal;
@@ -57,8 +53,6 @@
     color: #fff;
 }
 .footer .endline {
-    position: absolute;
-    bottom: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -73,7 +67,8 @@
 }
 .footer .endline .social-icons {
     display: flex;
-    max-width: 12%;
+    max-width: 15%;
+    box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
  }
@@ -93,6 +88,7 @@
     background-color: #29c5f6;
 }
 .endline .social-icons a:nth-child(2) {
+    padding: 0 15px;
     background-color: #6788ce;
 }
 .endline .social-icons a:last-child {
@@ -106,7 +102,7 @@
 .social-icons a i {
     font-size: 20px;
 }
-.footer .endline .our-phone a {
+.footer .endline a[href*="tel"] {
     font-family: "Roboto";
     font-size: 27px;
     font-weight: 900;
