@@ -2,11 +2,10 @@
     background-image: url(../media/bckgrds/bckg_header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /*height: 100vh;*/
+    background-position: center;
 }
 .logo-navigation {
     height: 67px;
-    padding-top: 25px;
     background-color: #fff;
     opacity: .75;
     position: fixed;
@@ -18,7 +17,6 @@
 }
 .sticky {
     height: 67px;
-    padding-top: 25px;
     background-color: #cae5ff;
     opacity: 1;
     position: fixed;
@@ -30,21 +28,22 @@
     box-shadow: inset 0px 15px 25px 10px rgba(80, 133, 248, .2);
 }
 a {
-    width: 117px;
-    height: 27px;
-    margin-right: 50px;
+    margin-right: 10px;
     font-family: "Bringin";
     font-size: 29px;
-    // line-height: 1.52;
+    line-height: 67px;
     letter-spacing: normal;
     color: #95a5ad;
     text-transform: capitalize;
     text-decoration: none;
 }
+
+.container a[title="Homepage"] {
+    margin-right: 30px;
+}
 .container a span {
     color: #36aeea;
 }
-    
 .container .main-navigation ul {
     display: flex;
     list-style-type: none;
@@ -52,64 +51,63 @@ a {
     margin-block-end: 0;
     padding-inline-start: 0;
 }
-
 .logo-navigation .main-navigation li a {
     font-family: "Raleway";
-    padding-left: 0;
-    padding-top: 15px;
-    padding-bottom: 34px;
-    margin-right: 24px;
+    padding: 10px;
     font-size: 12px;
     font-weight: bold;
-    line-height: 3.5;
     letter-spacing: normal;
     text-align: center;
     color: #9daeb6;
     text-transform: uppercase;
-    transition-duration: .4s;;
-    
+    transition-duration: .3s;;
 }
 .main-navigation li a:hover {
-    border-bottom: solid 6px #36aeea ;
+    background-color: rgba(54, 174, 234, 0.286) ;
+    box-shadow: 0px 14px 5px 1px rgba(54, 175, 234, 0.286);
+    border-radius: 12px 12px 0 0;
     cursor: pointer;
     color: #36aeea;
-    transition-duration: .4s;
+    transition-duration: .3s;
 }
 .main-navigation li a:active {
-    border-bottom: solid 6px #fab521 ;
     color: #7e5c13;
 }
 .main-navigation li a:focus {
-    border-bottom: solid 6px #fab521 ;
-    color: #fab521;
+    background-color: rgba(250, 181, 33, 0.286) ;
+    box-shadow: 0px 15px 5px 1px rgba(250, 181, 33, 0.286);
+    border-radius: 12px 12px 0 0;
+    color: #8a681f;
+    outline: none;
+}
+#topnav #menuToggler {
+    display: none;
 }
 .logo-navigation a.btn  {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
+    display: inline-block;
     width: 153px;
     height: 46px;
+    margin: auto 10px auto auto;
     background-color:#c7e0ec9d;
     color: #36aeea;
     padding-left: 0;
     line-height: 46px;
 }
 .to-mountains {
-    padding-top: 8%;
-    padding-bottom: 8%;
+    padding: 10% 2% 8% 2%;
 }
 .to-mountains .container {
     flex-direction: column;
     border: 3px solid #fff;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 0 0 40px;
     align-items: flex-start;
     max-height: max-content;
 }
 .to-mountains .container h1 {
     display: inline-block;
-    margin: 40px 0 17px 40px;
-    padding: 0;
+    margin: 0 0 2% 0;
+    padding-top: 40px;
     max-width: 490px;
     font-family: "Opensans", sans-serif;
     font-size: 50px;
@@ -126,8 +124,7 @@ a {
     text-transform: none;
 }
 .to-mountains .container p {
-    display: flex;
-    margin: 0 0 27px 40px;
+    margin: 0 0 3% 0;
     max-width: 490px;
     font-family: "Opensans", sans-serif;
     font-size: 18px;
@@ -136,16 +133,14 @@ a {
     color: rgba(255, 255, 255, 0.75);
     text-transform: none;
 }
-.to-mountains .container  a.btn {
-    display: flex;
+.to-mountains .container a.btn {
     justify-content: center;
     align-items: center;
-    margin: 0 0 45px 40px;
-    padding: 0;
+    margin: 0 0 4% 0;
     font-size: 14px;
     letter-spacing: 2.24px;
     color: #fff;
     width: 253px;
     height: 60px;
-    box-shadow: 0 0 35px 0 rgba(3, 3, 3, 0.06);
+    box-shadow: 0 0 35px 0 rgba(3, 3, 3, .103);
 }

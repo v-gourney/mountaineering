@@ -53,3 +53,22 @@ body {
     text-align: left;
     color: #fff;
   }
+  .scrolltop .icon {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .scrolltop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 115, 0, 0.692);
+    color: rgb(228, 238, 236);
+    display: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}

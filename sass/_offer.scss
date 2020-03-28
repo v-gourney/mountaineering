@@ -1,5 +1,6 @@
 .offer {
     background-image: url(../media/bckgrds/bckg_offer.jpg);
+    background-size: cover;
 }
 .offer .container {
     flex-direction: column;
@@ -49,5 +50,5 @@
     letter-spacing: 0.28px;
     text-align: justify;
     color: #36aeea;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
 }

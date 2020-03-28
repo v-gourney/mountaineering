@@ -8,19 +8,20 @@
     <meta name="description" content="Путешествие в горы. Лучшие горные курорты. Горные походы. ">
     <title>Travel with us to the Mountains</title>
     <link rel="icon" href="./media/favicon_mountains.png">
-    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     
 <section class="header-wrapper" id="home">
     <header class="logo-navigation">
-        <div class="container">
+        <div class="container" >
             <a href="#home" title="Homepage"><span>Moun</span>tains</a>
-            <nav class="main-navigation">
-                <ul>
+            
+            <nav class="main-navigation" >
+                <ul class= "navigation-list" id="topnav">
                     <li><a href="#aboutus" title="Read our story">Our story</a></li>
                     <li><a href="#services" title="Our services">Services</a></li>
                     <li><a href="#work" title="How we work">Work</a></li>
@@ -28,6 +29,10 @@
                     <li><a href="#journal" title="Check this out">Journal</a></li>
                     <li><a href="#gallery" title="Sweet pics">Gallery</a></li>
                     <li><a href="#contacts" title="Contact us">Contacts</a></li>
+                    <li><a id="menuToggler">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                    </li>
                 </ul>
             </nav>
             <a class="btn" href="tel:+998781503022"> Call us</a>
@@ -58,10 +63,10 @@
                     As the originators, innovators and leaders in adventure travel for more than five decades, we passionately create, craft and share indelible, transformative journeys to the world's most memorable places. Our more than 200 unique and once-in-a-lifetime trips are designed to inspire and exhilarate, enliven and excite—opening eyes and minds through profoundly personal connections with nature and culture. <br>
 
                     Our small group and custom adventures span the globe and the spectrum—of interests, environments, and activities—every one expertly planned and knowledgeably and passionately guided. And our commitment to making every experience a remarkable one has earned us preferred travel outfitter status for National Geographic Active Expeditions, Active New York Times Journeys, and Smithsonian Active Journeys. <br>
-                    <a href="javascript:PopUpHide()" onclick="document.body.style.overflow = ''">&#215</a>
+                    <a id="popClo">&#215</a>
                 </div>
             </div>
-            <a class="btn" href="javascript:PopUpShow()" onclick="document.body.style.overflow = 'hidden'">read more</a>
+            <a class="btn" id="popOp">read more</a>
         </div>
         <div class="fewpics">
             <img src="./media/blog_about_2.jpg" alt="mountain paysage">
@@ -137,7 +142,7 @@
                     1
                 </figcaption>
                 <div class="contract-step-1">
-                    <svg  width="125" height="135" viewbox="0 0 140 160" style="filter: drop-shadow(0 10px 4px rgba(0, 0, 0, .4));" >
+                    <svg viewbox="0 0 140 160" style="filter: drop-shadow(0 10px 4px rgba(0, 0, 0, .4));" >
                         <path fill="#fff" d="M56.291651245988504 7.499999999999999Q69.28203230275508 0 82.27241335952166 7.5L125.57368354874359 32.5Q138.56406460551017 40 138.56406460551017 55L138.56406460551017 105Q138.56406460551017 120 125.57368354874359 127.5L82.27241335952166 152.5Q69.28203230275508 160 56.291651245988504 152.5L12.990381056766578 127.5Q0 120 0 105L0 55Q0 40 12.99038105676658 32.5Z">
                         </path>
                     </svg>
@@ -193,6 +198,22 @@
                 </p>
             </figure>
         </div>
+        <p class="hidden-workstep">
+            1. Perform a background check. 
+            A man's history may predict difficulty in collecting payment for work performed under contract. A public database can reveal important details about a business.
+        </p>
+        <p class="hidden-workstep">
+            2. Verify that the contract 
+            identifies your business, and that you are licensed and registered to do business.        Confirm that the name on the contract reads exactly as the name is registered with the state.
+            </p>
+        <p class="hidden-workstep">
+            3. Understand retainage terms. 
+            When negotiating payment terms, remember to discuss retainage, including how much is withheld (it cannot exceed 5 percent on a Mountains public works project) and when it is released.
+            </p>
+        <p class="hidden-workstep">
+            4. You can start signing online contracts 
+            soon as you create a Mountains account. Bonus: All Mountains’s signing flows feature a device-optimized signer experience, so you can sign easily from your mobile phone or tablet.
+        </p>
     </div>
 </section>
 <section class="travelwithus" id="services">
@@ -295,7 +316,7 @@
 </section>
 <section class="slicky">
     <div class="container">
-        <div class="slider">
+        <div class="slider" >
             <i class="fab fa-slack"></i>
             <i class="fab fa-adobe"></i>
             <i class="fab fa-google"></i>
@@ -345,29 +366,31 @@
                  
             </form>
             <div class="endline">
-                <div class="copyright">
+                <span class="copyright">
                     All rights reserved 2019 &#169
-                </div>
+                </span>
                 <div class="social-icons" target="_blank">
                     <a href="https://twitter.com/hashtag/mountains"><i class="fab fa-twitter"></i>
                     </a>   
                     <a href="https://www.facebook.com/wwwMountains/" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-facebook-f"> </i>
                     </a>
                     <a href="https://vk.com/the.mountains.trip" target="_blank">
                         <i class="fab fa-vk"></i>
                     </a>
                 </div>
-                <div class="our-phone">
-                    <a href="tel:+998781503022"> +9 987 815 03 022</a>
-                </div>
+                <a href="tel:+998781503022"> +9 987 815 03 022</a>
             </div>
         </div>
     </section>   
 </section>
+<div class='scrolltop'>
+    <div class='scroll icon'>
+        <i class="fas fa-mountain" aria-hidden="true"></i>
+    </div>
+</div>
 <script src="./js/jquery-3.4.1.min.js"></script> 
 <script src="./js/slick.min.js"></script>
 <script src="./js/main.js"></script>
-
 </body>
 </html>
