@@ -251,20 +251,19 @@
     }
     #topnav.responsive #menuToggler:active {
         background-color: transparent;
-  }
+    }
     #topnav.responsive li a[href*="#"] {
         display: block;
         position: relative;
         left: -165px;
         top: 67px;
         padding: 12px 20px 12px 30px ;
-        margin: 0;
+        margin: -1px 0;
         text-align: left;
         font-size: 15px;
         line-height: 15px;
         background-color: #fff;
         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     }
     #topnav.responsive li a[href*="#contacts"]:last-child {
         border-radius: 0 0 25px 0;
@@ -382,9 +381,6 @@
         padding-top: 6%;
         margin-bottom: 5%;
     }
-
-   
-
     .scheme .container .divider {
         padding-top: 6%;
         margin-bottom: 5%;
@@ -654,8 +650,9 @@
     }
     .gallery .photo-album {
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(13, 5vh);
+        grid-template-rows: repeat(13, 12vh);
         margin: 0 0 3% 0;
+        gap: .1em;
     }
     .gallery .photo-album img:first-child {
         grid-row: 1/5; 
@@ -869,7 +866,7 @@
     }
     .gallery .photo-album {
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(14, 5vh);
+        grid-template-rows: repeat(14, 9vh);
         margin: 0 0 5% 0;
         gap: 3px;
     }
@@ -931,5 +928,12 @@
         margin-bottom: 5px;
     }
 }
-
+@media all and (max-width: 320px){
+    .header-wrapper {
+        height: 100vh;
+    }
+    .to-mountains {
+        padding: 35% 2% 3% 2%;
+    }
+}
 
